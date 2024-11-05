@@ -1,0 +1,205 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-button.active {
+    background: #555;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background: #777;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+.cta-button {
+    background: linear-gradient(135deg, #ff8a00, #1a1919); /* Gradient background */
+    color: white;
+    padding: 15px 25px; /* Increased padding */
+    border-radius: 30px; /* More rounded corners */
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    display: inline-block; /* To respect padding and margin */
+    margin-top: 20px; /* Spacing from the text above */
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #e52e71, #ff8a00); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: calc(100vh - 100px); /* Adjust for header/footer */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+}
+
+.hero h1 {
+    font-size: 48px; /* Large font size */
+    color: #ffcc00; /* Bright color for visibility */
+}
+
+.hero p {
+    font-size: 24px; /* Medium font size */
+    color: #f0f0f0; /* Light color */
+}
+
+/* Platforms and Contests Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+/* Platforms Section */
+.platforms-container, .contests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.platform-card, .contest-card {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.platform-card {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.contest-card {
+    background: linear-gradient(135deg, #ff6f61, #de4a29); /* Different gradient */
+}
+
+.platform-card:hover, .contest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.platform-card h3, .contest-card h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.platform-card p, .contest-card p {
+    color: #f0f0f0;
+}
+
+/* Button styles */
+.explore-button, .register-button {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.explore-button {
+    background: #4caf50; /* Green for platforms */
+}
+
+.register-button {
+    background: #ff5722; /* Orange for contests */
+}
+
+.explore-button:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+.register-button:hover {
+    background: #e64a19; /* Darker orange on hover */
+}
+.progress-bar {
+    background-color: #444;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #4caf50; /* Green */
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px; /* Center text vertically */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .platform-card, .contest-card {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
